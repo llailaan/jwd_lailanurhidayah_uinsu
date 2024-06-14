@@ -1,0 +1,96 @@
+.container{
+    width: 1080px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+main{
+    padding: 0 15px;
+}
+
+body{
+    background-color: #ccc;
+    margin: 0;
+}
+
+.jumbotron {
+    padding: 40px;
+    background-image: url('../image/header.png');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: rgb(3, 3, 3);
+  }
+nav ul{
+    list-style-type: none;
+    background-color: #69A6EB;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    float: left;
+}
+span{
+    font-weight: bold;
+    font-size: 40;
+}
+nav ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+}
+
+nav ul li a:hover{
+    background-color: #ccc;
+}
+
+.wisata{
+    display: flex;
+    padding: 5px;
+}
+
+.paket{
+    width: 66.66%;
+    display: flex;
+    gap: 5px;
+    flex-flow: row wrap;
+
+}
+
+.video{
+    width: 33.33%;
+    border: 2px solid #ccc;
+    gap: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 10px 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+.kartu{
+    border: 2px solid #ccc;
+    gap: 5px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    margin: 0;
+    box-shadow: 0 10px 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+.kartu h3, p, a{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #525050;
+    text-align: center;
+    font-weight: bold;
+  }

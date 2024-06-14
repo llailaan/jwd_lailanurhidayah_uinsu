@@ -1,0 +1,166 @@
+.container{
+    width: 1080px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+main{
+    padding: 0 15px;
+}
+
+body{
+    background-color: #ccc;
+    margin: 0;
+}
+
+.jumbotron {
+    padding: 40px;
+    background-image: url('../image/headerku.png');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: rgb(3, 3, 3);
+  }
+
+  .jumbotron span{
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 100px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  margin: 3px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  display: block;
+  
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 145px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*
+nav ul{
+    list-style-type: none;
+    background-color: #69A6EB;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+}
+
+nav ul li a:hover{
+    background-color: #ccc;
+}
+
+*/
+.wisata{
+    display: flex;
+    padding: 5px;
+}
+
+.paket{
+    width: 66.66%;
+    display: flex;
+    gap: 5px;
+    flex-flow: row wrap;
+
+}
+
+.video{
+    width: 33.33%;
+    border: 2px solid #ccc;
+    gap: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 10px 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+.kartu{
+    border: 2px solid #ccc;
+    gap: 5px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    margin: 0;
+    box-shadow: 0 10px 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+.kartu h3, p, a{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #525050;
+    text-align: center;
+    font-weight: bold;
+  }

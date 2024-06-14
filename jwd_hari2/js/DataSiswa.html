@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>NIM</td>
+                <td><input type="text" name="nim" id="nim" onblur="validasi()"></td>
+                <td><label id="nimError" style="color: red;"></label></td>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td><input type="text" name="nama" id="nama" onblur="validasi()"></td>
+                <td><label id="namaError" style="color: red;"></label></td>
+            </tr>
+            <tr>
+                <td>Kelas</td>
+                <td>
+                    <select name="kelas" id="kelas" onblur="validasi()">
+                    <option value="">IK-1</option>
+                    <option value="">IK-2</option>
+                    <option value="">IK-3</option>
+                    <option value="">SI-1</option>
+                    <option value="">SI-2</option>
+                    <option value="">SI-3</option>
+                    </select>
+                </td>
+                <td><label id="kelasError" style="color: red;"></label></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jenkel" id="jenkel1" value="Pria">
+                    <input type="radio" name="jenkel" id="jenkel2" value="Wanita">
+                </td>
+                <td><label id="jenkelError" style="color: red;"></label></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>
+                    <textarea name="alamat" id="alamat" onblur="validasi()"></textarea>
+                </td>
+                <td><label id="alamatError" style="color: red;"></label></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Proses" onclick="validasi()">
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script>
+    function validasi(){
+        var nim = document.getElementById("nim").value
+        var nama = document.getElementById("nama").value
+        var kelas = document.getElementById("kelas").value
+        var jenkel = document.getElementById("jenkel").value
+        var alamat = document.getElementById("alamat").value
+
+        if (nim == null || nim == ""){
+            document.getElementById("nimError").innerHTML = "NIM Masih Kosong"
+        }else if (nama == null || nama == ""){
+            document.getElementById("namaError").innerHTML = "Nama Masih Kosong"
+        }else if (kelas == null || kelas == ""){
+            document.getElementById("kelasError").innerHTML = "Kelas Masih Kosong"
+        }else if (alamat == null || alamat == ""){
+            document.getElementById("alamatError").innerHTML = "Alamat Masih Kosong"
+        }
+    }
+</script>
+</html>
